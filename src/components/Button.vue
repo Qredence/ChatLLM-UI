@@ -1,14 +1,19 @@
 <template>
   <button :class="$style.button">
-    <div :class="$style.label">Send</div>
-    <img :class="$style.paperplanetiltIcon" alt="" src="/paperplanetilt.svg" />
+    <div :class="$style.label">{{label}}</div>
+    <PaperPlaneTiltIcon paperPlaneTilt="/paperplanetilt.svg" />
   </button>
 </template>
 <script lang="ts">
   import { defineComponent } from "vue";
+  import PaperPlaneTiltIcon from "./PaperPlaneTiltIcon.vue";
 
   export default defineComponent({
     name: "Button",
+    components: { PaperPlaneTiltIcon },
+    props: {
+      label: { type: String },
+    },
   });
 </script>
 <style module>
@@ -23,11 +28,6 @@
     text-align: left;
     display: inline-block;
     min-width: 39px;
-  }
-  .paperplanetiltIcon {
-    height: 16px;
-    width: 16px;
-    position: relative;
   }
   .button {
     cursor: pointer;

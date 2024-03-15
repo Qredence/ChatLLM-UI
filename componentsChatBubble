@@ -1,0 +1,35 @@
+<template>
+  <div :class="$style.chatbubble">
+    <Bubble /><BottomInfo
+      role="B"
+      thumbsUp="/thumbsup.svg"
+      thumbsDown="/thumbsdown.svg"
+      date="15:15"
+    />
+  </div>
+</template>
+<script lang="ts">
+  import { defineComponent } from "vue";
+  import Bubble from "./src/components/Bubble.vue";
+  import BottomInfo from "./src/components/BottomInfo.vue";
+
+  export default defineComponent({
+    name: "AssistantBubble",
+    components: { Bubble, BottomInfo },
+  });
+</script>
+<style module>
+  .chatbubble {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-4xl);
+    max-width: 100%;
+    text-align: left;
+    font-size: var(--body-size);
+    color: var(--text-text-primary);
+    font-family: var(--callout-emphasized);
+  }
+</style>

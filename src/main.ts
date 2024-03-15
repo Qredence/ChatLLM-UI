@@ -1,10 +1,6 @@
 import { createApp } from "vue";
 import { createRouter, createWebHistory } from "vue-router";
 import App from "./App.vue";
-import "vuetify/styles";
-import { createVuetify } from "vuetify";
-import * as components from "vuetify/components";
-import * as directives from "vuetify/directives";
 
 import Chat from "./pages/Chat.vue";
 import "./global.css";
@@ -32,7 +28,7 @@ router.beforeEach((toRoute, fromRoute, next) => {
   const documentTitle =
     toRoute?.meta && toRoute?.meta?.title
       ? toRoute?.meta?.title
-      : "Qredence---HUXllm";
+      : "chatflow.design";
   window.document.title = documentTitle;
   if (toRoute?.meta?.description) {
     addMetaTag(toRoute?.meta?.description);
@@ -51,8 +47,6 @@ const addMetaTag = (value) => {
   }
 };
 
-const vuetify = createVuetify({ components, directives });
-
-createApp(App).use(router).use(vuetify).mount("#app");
+createApp(App).use(router).mount("#app");
 
 export default router;

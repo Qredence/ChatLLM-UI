@@ -1,11 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap");
 body {
   margin: 0;
   line-height: normal;
 }
 :root {
   /* fonts */
-  --callout-emphasized: Inter;
+  --callout-emphasized: "SF Pro";
+  --font-inter: Inter;
   --title-title1-emphasized: "SF Pro Display";
   --font-inter-display: "Inter Display";
 
@@ -13,6 +14,7 @@ body {
   --callout-emphasized-size: 16px;
   --body-size: 17px;
   --title-title1-emphasized-size: 28px;
+  --font-size-3xl: 22px;
   --font-size-xl: 20px;
 
   /* Colors */
@@ -40,6 +42,7 @@ body {
 
   /* Gaps */
   --gap-9xs: 4px;
+  --gap-5xl: 24px;
   --gap-4xl: 23px;
   --gap-xl: 20px;
   --gap-base: 16px;
@@ -47,16 +50,20 @@ body {
   --gap-5xs: 8px;
 
   /* Paddings */
+  --padding-xl: 20px;
+  --padding-4xl: 23px;
   --padding-2xs-5: 10.5px;
   --padding-6xs: 7px;
   --padding-lgi: 19px;
   --padding-sm: 14px;
+  --padding-58xl: 77px;
+  --padding-19xl: 38px;
   --padding-5xl: 24px;
   --padding-3xs: 10px;
+  --padding-7xl: 26px;
   --padding-9xs: 4px;
   --padding-4xs: 9px;
   --padding-base: 16px;
-  --padding-4xl: 23px;
   --padding-2xs: 11px;
 
   /* Border radiuses */

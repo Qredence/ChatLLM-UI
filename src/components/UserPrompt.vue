@@ -1,31 +1,19 @@
 <template>
   <div :class="$style.userprompt">
-    <div :class="$style.value">Ask a question</div>
-    <button />
+    <ValueText value="Ask a question" /><button label="Send" />
   </div>
 </template>
 <script lang="ts">
   import { defineComponent } from "vue";
+  import ValueText from "./ValueText.vue";
   import Button from "./Button.vue";
 
   export default defineComponent({
     name: "UserPrompt",
-    components: { Button },
+    components: { ValueText, Button },
   });
 </script>
 <style module>
-  .value {
-    flex: 1;
-    position: relative;
-    line-height: 22px;
-    font-weight: 500;
-    display: inline-block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    min-width: 95px;
-    max-width: 100%;
-  }
   .userprompt {
     align-self: stretch;
     border-radius: var(--br-xs);

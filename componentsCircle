@@ -1,0 +1,20 @@
+<template>
+  <div :class="$style.circle" />
+</template>
+<script lang="ts">
+  import { defineComponent } from "vue";
+
+  export default defineComponent({
+    name: "Avatar",
+  });
+</script>
+<style module>
+  .circle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+  }
+</style>
