@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --callout-emphasized: Inter;
+  --title-title1-emphasized: "SF Pro Display";
+  --font-inter-display: "Inter Display";
+
+  /* font sizes */
+  --callout-emphasized-size: 16px;
+  --body-size: 17px;
+  --title-title1-emphasized-size: 28px;
+  --font-size-xl: 20px;
+
+  /* Colors */
+  --background-background-page: #fff;
+  --background-background-container: #fcfcfc;
+  --container-surface-tertiary: rgba(120, 120, 128, 0.12);
+  --text-quarternary: rgba(0, 0, 0, 0.1);
+  --text-text-primary: rgba(0, 0, 0, 0.85);
+  --text-text-secondary: rgba(0, 0, 0, 0.5);
+  --light-fills-tertiary: rgba(118, 118, 128, 0.12);
+  --container-surface-primary: rgba(120, 120, 128, 0.2);
+  --color-lightslategray: rgba(143, 143, 153, 0.12);
+  --light-colors-blue: #007aff;
+  --separator-separator-thin: rgba(60, 60, 67, 0.36);
+
+  /* Spacing */
+  --spacing-10: 10px;
+  --numeric-500: 500px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --radius-radius-l: 24px;
+  --spacing-4: 4px;
+  --radius-radius-xs: 8px;
+  --spacing-8: 8px;
+
+  /* Gaps */
+  --gap-9xs: 4px;
+  --gap-4xl: 23px;
+  --gap-xl: 20px;
+  --gap-base: 16px;
+  --gap-sm: 14px;
+  --gap-5xs: 8px;
+
+  /* Paddings */
+  --padding-2xs-5: 10.5px;
+  --padding-6xs: 7px;
+  --padding-lgi: 19px;
+  --padding-sm: 14px;
+  --padding-5xl: 24px;
+  --padding-3xs: 10px;
+  --padding-9xs: 4px;
+  --padding-4xs: 9px;
+  --padding-base: 16px;
+  --padding-4xl: 23px;
+  --padding-2xs: 11px;
+
+  /* Border radiuses */
+  --br-xs: 12px;
+  --br-21xl: 40px;
+  --br-481xl: 500px;
+  --br-5xl: 24px;
+  --br-5xs: 8px;
+
+  /* Effects */
+  --shadows-shadow-l: 0px 4px 21px rgba(0, 0, 0, 0.05);
+}
